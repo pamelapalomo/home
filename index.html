@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Sitio Web</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#inicio">Página de inicio</a></li>
+                <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+                <li><a href="#investigacion">Investigación</a></li>
+                <ul>
+                    <li><a href="#publicaciones">Publicaciones</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#colaboradores">Colaboradores</a></li>
+                </ul>
+                <li><a href="#docencia">Docencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#curriculum-vitae">Currículum Vitae</a></li>
+                <li><a href="#enlaces-de-interes">Enlaces de Interés</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <header>
+                <h1>Desde los Datos hasta la Decisión: Mi Enfoque en Optimización</h1>
+            </header>
+            <section id="inicio">
+                <h2>Página de inicio</h2>
+                <p>Texto de ejemplo para la página de inicio.</p>
+            </section>
+            <section id="acerca-de-mi">
+                <h2>Acerca de mí</h2>
+                <p>Texto de ejemplo para la sección "Acerca de mí".</p>
+            </section>
+            <!-- Agrega las demás secciones aquí -->
+			<section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Enlace al Proyecto 1</a>
+        </div>
+        <div class="project-card">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Enlace al Proyecto 2</a>
+        </div>
+        <div class="project-card">
+            <h3>Proyecto 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Enlace al Proyecto 3</a>
+        </div>
+    </div>
+    <button id="prev-btn">Anterior</button>
+    <button id="next-btn">Siguiente</button>
+</section>
+
+        </main>
+    </div>
+</body>
+<script>
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const projectsContainer = document.querySelector('.projects-container');
+
+    let scrollAmount = 0;
+
+    prevBtn.addEventListener('click', () => {
+        scrollAmount += 320; // Ancho de la tarjeta más el margen
+        projectsContainer.style.transform = `translateX(${scrollAmount}px)`;
+    });
+
+    nextBtn.addEventListener('click', () => {
+        scrollAmount -= 320; // Ancho de la tarjeta más el margen
+        projectsContainer.style.transform = `translateX(${scrollAmount}px)`;
+    });
+</script>
+
+</html>

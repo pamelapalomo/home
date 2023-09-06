@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://ucsp.edu.pe/wp-content/uploads/2020/10/Ciencia-de-Datos.jpg');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+	/* Aplicar transparencia al color de fondo */
+    background-color: rgba(75, 0, 130, 0.3); /* Valor alfa: 0.5 para 50% de transparencia */
+}
+
+.container {
+    display: flex;
+}
+
+/* Barra lateral de navegación */
+.sidebar {
+    background-color: #334d5c;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    bbackground-color: #483D8B; /* Color violeta (pálido) */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Imagen con borde cuadrado */
+img {
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+}
+
+/* Personaliza los estilos para cada sección según tus preferencias */
+section {
+    margin-bottom: 30px;
+}
+
+/* Estilos adicionales según tus preferencias */
+/* Agrega aquí tus estilos personalizados */
+/* Estilos para la sección de proyectos */
+#proyectos {
+    margin-top: 30px;
+}
+
+.projects-container {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Estilos para los botones de desplazamiento */
+#prev-btn,
+#next-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
